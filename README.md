@@ -1,2 +1,2 @@
-# Dise-oInterfaces_DAW
+# InterfaceDesign_DAW
 Asignatura de diseño de interfaces 
