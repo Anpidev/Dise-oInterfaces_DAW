@@ -1,0 +1,118 @@
+/*COLORES DE LA MAQUETACIÓN EN GENERAL*/
+body {
+    background-color: #e0f7fa; /* Color de fondo suave */
+    color: #004d40; /* Color de texto oscuro */
+}
+/* enlaces */
+a {
+    color: #064e46; /* Color de enlaces */
+}
+
+a:hover {
+    color: #9560b4; /* Color de enlaces al pasar el ratón */
+}
+
+/* Primera pauta: GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; /* Espacio entre las columnas */
+}
+
+/* Segunda pauta: FLEXBOX */
+.main-content {
+    grid-column: 1 / span 5; /* Grid en columna desde pos.1 hasta 5 */
+    margin-top: 100px; /* Margen superior para separar del header fijo */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.article{
+    /* El box model se cumple al definir margen interior, border y margen exterior */
+    flex: 1 1 300px; /* Crecimiento flexible con un ancho base de 300px */
+    margin: 20px; /* Margen exterior para separación */
+    border: 1px solid #00897b; /* Color de borde de los artículos */
+    padding: 20px; /* Espacio interior */
+    display: flex;
+    flex-direction: column; /* Organiza elementos en columna */
+    align-items: center; /* Centra elementos en el eje horizontal */
+}
+
+/* Tercera pauta: POSICIONAMIENTO */
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Color de fondo blanco */
+    height: 100px; /* Define una altura fija para el header */
+    z-index: 1000; /* Nivel de apilamiento superior */
+    background-color: #00897b; /* Color de fondo del encabezado */
+    color: white; /* Color de texto en el encabezado */
+}
+
+footer {
+    position: fixed; /* Fija el footer en la parte inferior */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00897b; /* Color de fondo del pie de página */
+    color: white; /* Color de texto en el pie de página */
+}
+
+.sidebar {
+    position: fixed; /* Fija la barra lateral en el lado derecho */
+    top: 120px;
+    right: 0;
+    bottom: 0;
+    width: 200px; /* Ancho fijo para la barra lateral */
+    background-color: #b2dfdb; /* Color de fondo de la barra lateral */
+    color: #004d40; /* Color de texto en la barra lateral */
+    z-index: 800; /* Nivel de apilamiento inferior al header */
+}
+
+
+
+
+/* Cuarta pauta: FLOAT */
+.article img {
+    float: left; /* Permite que la imagen flote a la izquierda */
+    width: 300px; /* Ancho fijo para la imagen */
+    height: 200px; /* Altura fija para la imagen */
+    margin-right: 20px; /* Margen derecho para separación */
+}
+
+/* Quinta pauta: Z-INDEX 
+   Se aplica un z-index superior al header para asegurarse de que se superponga a otros elementos. */
+
+/* Sexta pauta: STICKY (en la barra de navegación) */
+.nav {
+    position: sticky; /* Permite que la barra de navegación se mantenga visible al hacer scroll */
+    top: 120px; /* Distancia del borde superior */
+    margin-top: 10px; /* Ajusta según sea necesario */
+    background-color: #e0f7fa; /* Color de fondo de la barra de navegación */
+    color: white; /* Color de texto en la barra de navegación */
+    z-index: 900; /* Nivel de apilamiento inferior al header */
+}
+
+/*MODIFICO EL FORMATO DE LA LISTA*/
+/* Barra de navegación */
+.nav ul {
+    list-style-type: none; /* Elimina los puntos predeterminados */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+.nav li {
+    display: inline; /* Muestra los elementos de lista en línea */
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+
+/*Septima pauta : CLEAR */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
