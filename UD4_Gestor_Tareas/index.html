@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <section>
+        <h1>Lista de tareas Pendientes</h1>
+
+        <!-- Formulario para agregar tareas -->
+        <input type="text" id="tarea" placeholder="Escribe una nueva tarea">
+        <button id="agregar">Agregar</button>
+
+        <!-- Mensaje de advertencia si la tarea está vacía -->
+        <p id="mensaje" style="color:yellow; display:none;">Por favor, escribe una tarea.</p>
+
+        <h3>Tareas - <span id="cantidad">0</span> pendientes</h3>
+        <h3>Completadas - <span id="completadas">0</span></h3>
+        <ul id="listado"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

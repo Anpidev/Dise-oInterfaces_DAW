@@ -1,0 +1,57 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #008000;
+    border-radius: 5px;
+    background: #e60000;
+}
+
+input,
+button {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #008000;
+}
+
+input {
+    width: 70%;
+    background: #f1f1f1;
+}
+
+button {
+    width: 20%;
+    border: none;
+    color: #fff;
+    background: #008000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #006400;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 8px 0;
+    border-bottom: 2px solid #008000;
+    cursor: pointer;
+}
+
