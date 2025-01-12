@@ -1,0 +1,143 @@
+/* Resetear márgenes y padding de los elementos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    background-color: #C2C5AA;
+    color: #414833;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #656D4A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegación */
+.nav {
+    background-color: #B6AD90;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    /* Eliminar los puntos */
+    padding: 0;
+    text-align: center;
+    /* Centrar los elementos de la lista */
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: #161c09;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #757668;
+}
+
+/* Contenido principal */
+.main-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.main-content p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.main-content img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+.main-content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.main-content li {
+    display: block;
+    margin-right: 20px;
+}
+/* Video */
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #B6AD90;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #656D4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #757668;
+}
+
+/* Footer */
+footer {
+    background-color: #656D4A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top:30px;
+}
